@@ -1,137 +1,349 @@
 body {
-    background-image: url(../img/Background.png);
-    /* Imagen de fondo*/
-    background-position: center;
-    /* Centrar imagen*/
-    background-repeat: no-repeat;
-    /* No repetir imagen*/
-    background-attachment: fixed;
-    /* Fijar imagen*/
+  background-image: url(../img/Background.png);
+  /* Imagen de fondo*/
+  background-repeat: repeat;
+  /* Repetir imagen*/
+  background-attachment: fixed;
+  /* Fijar imagen*/
 }
 
-.Content-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+.content-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    font-family: Orbitron, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
+  color: white;
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .svg {
-    width: 2%;
+  width: 2%;
 }
 
-.Content-img {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+.content-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .paragraph-main {
-    color: white;
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    flex: 90%;
-    text-align: justify;
-    align-items: center;
-    text-indent: 50px;
+  color: white;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  flex: 90%;
+  text-align: justify;
+  align-items: center;
+  text-indent: 50px;
 }
 
 .link-celestials-body {
-    color: black;
-    font-size: 40px;
-    /* Tamaño de letra */
-    text-decoration: none;
-    /* Quitar subrayado */
-    font-weight: bold;
-    /* Texto en negrita */
-    padding: 10px 20px;
-    /* Espacio alrededor del enlace */
-    background-color: #f1c40f;
-    /* Color de fondo */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    transition: background-color 0.3s ease;
-    /* Transición al pasar el ratón */
+  color: black;
+  font-size: 30%;
+  /* Tamaño de letra */
+  text-decoration: none;
+  /* Quitar subrayado */
+  font-weight: bold;
+  /* Texto en negrita */
+  padding: 10px 20px;
+  /* Espacio alrededor del enlace */
+  background-color: #f1c40f;
+  /* Color de fondo */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+  /* Transición al pasar el ratón */
 }
 
 .link-celestials-body:hover {
-    background-color: #e67e22;
-    /* Color de fondo al pasar el ratón */
+  background-color: #e67e22;
+  /* Color de fondo al pasar el ratón */
 }
 
 #img-mercury {
-    width: 20%;
-    height: auto;
+  width: 20%;
+  height: auto;
 }
 
 #venus-without-clouds {
-    width: 30%;
-    display: none;
+  width: 30%;
+  display: none;
 }
 
 #venus-with-clouds {
-    width: 30%;
-    display: block;
+  width: 30%;
+  display: block;
 }
 
 #img-earth {
-    width: 35%;
-    height: auto;
+  width: 35%;
+  height: auto;
 }
 
 #img-mars {
-    width: 25%;
-    height: auto;
+  width: 25%;
+  height: auto;
 }
 
 #img-saturn {
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 
 #img-uranus {
-    width: 20%;
-    height: auto;
+  width: 20%;
+  height: auto;
 }
 
 #img-neptune {
-    width: 20%;
-    height: auto;
+  width: 20%;
+  height: auto;
 }
 
 #img-pluto {
-    width: 20%;
-    height: auto;
+  width: 20%;
+  height: auto;
 }
 
 .paragraph-main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .styles-p {
-    font-family: Orbitron, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    color: white
+  font-family: Orbitron, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: white
 }
 
 .button-start-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: silver;
+  display: flex;
+  padding: 4px;
+  gap: 10px;
+  font-size: small;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+
+  .content-title {
+    font-size: 5vw;
+  }
+
+  .content-title svg {
+    width: 10%;
+  }
+
+  .paragraph-main {
+    font-size: 7vw;
+    justify-content: center;
+  }
+
+  .styles-p {
+    margin-bottom: 80px;
+  }
+
+  #img-sun {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-mercury {
+    width: 50%;
+    height: auto;
+  }
+
+  #venus-with-clouds {
+    width: 80%;
+    height: auto;
+  }
+
+  #venus-without-clouds {
+    width: 80%;
+    height: auto;
+  }
+
+  #img-earth {
+    width: 80%;
+    height: auto;
+  }
+
+  #img-moon {
+    width: 60%;
+    height: auto;
+  }
+
+  #img-mars {
+    width: 60%;
+    height: auto;
+  }
+
+  #img-jupiter {
+    width: 80%;
+    height: auto;
+  }
+
+  #img-saturn {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-uranus {
+    width: 50%;
+    height: auto;
+  }
+
+  #img-neptune {
+    width: 50%;
+    height: auto;
+  }
+
+  #img-pluto {
+    width: 80%;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+    width: fit-content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+  .paragraph-main {
+    font-size: 5vw;
+    justify-content: center;
+  }
+
+  #img-pluto {
+    width: 60%;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: medium;
+  }
+
+  footer svg {
+    width: 40%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+  .content-title svg {
+    width: 6%;
+  }
+
+  #img-sun {
+    width: 100%;
+    height: auto;
+  }
+
+  .styles-p {
+    margin-bottom: 80px;
+  }
+
+  .link-celestials-body {
+    font-size: 150%;
+    font-optical-sizing: auto;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: medium;
+  }
+
+  footer svg {
+    width: 5%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .content-title svg {
+    width: 4%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: medium;
+  }
+
+  footer svg {
+    width: 4%;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+
+  .content-title svg {
+    width: 4%;
+  }
+
+  #img-pluto {
+    width: 5%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+    font-optical-sizing: auto;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+    font-size: medium;
+  }
+
+  footer svg {
+    width: 4%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }

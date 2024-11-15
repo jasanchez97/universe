@@ -1,9 +1,8 @@
-# Universe of one
+# Universe
 
 This page is simply a sample of an effort to achieve the dream of developing a website, with astronomy as a topic that I liked so much as a child.
 
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
+The refference to the page is https://dribbble.com/shots/23084872-VFX-Studio-13
 
 ## Getting Started
 
@@ -13,72 +12,34 @@ for notes on deploying the project on a live system.
 
 ### Prerequisites
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
-
-### Installing
-
-A step by step series of examples that tell you how to get a development
-environment running
-
-Say what the step will be
-
-    Give the example
-
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
+There is no need to install some tools before to open the page
 
 ## Deployment
 
-Add additional notes to deploy this on a live system
+
 
 ## Built With
 
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
+  - [Knowledge] - Of my self and by a huge back of the enough internet, obviously all thanks to my teacher, Tiburcio
   - [Creative Commons](https://creativecommons.org/) - Used to choose
     the license
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
+of conduct
 
 ## Versioning
 
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
+Used [Semantic Versioning](http://semver.org/) for versioning. For the versions
+available, see (https://github.com/jasanchez97/universe/activity).
 
 ## Authors
 
-  - **Billie Thompson** - *Provided README Template* -
+  - **Tiburcio Cruz** - *Provided the README of PurpleBooth* -
+    [TiburcioCruz](repositorio)
     [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
+    [JuanAntonioSánchezMartel](https://github.com/jasanchez97)
 
 ## License
 
@@ -88,6 +49,5 @@ details
 
 ## Acknowledgments
 
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+  - For the wonderful teaching staff I have
+  - Inspiration for making my own game that I want to develop in the future, not far away

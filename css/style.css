@@ -27,6 +27,14 @@ body {
   right: 0px;
 }
 
+.menu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
 .sun-container {
   display: flex;
   /* Flex */
@@ -259,6 +267,22 @@ footer {
   height: 30px;
 }
 
+::-webkit-scrollbar { /* width */
+  width: 10px;
+}
+
+::-webkit-scrollbar-track { /* Track */
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb { /* Handle */
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+  background: #555;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
 
@@ -270,7 +294,6 @@ footer {
     width: 100%;
     margin-bottom: 100px;
   }
-
 
   .section-1 {
     width: 100%;
@@ -284,6 +307,36 @@ footer {
     margin-bottom: 100px;
   }
 
+  #img-mercury {
+    width: 50%;
+    height: auto;
+  }
+
+  #venus-with-clouds {
+    width: 80%;
+    height: auto;
+  }
+
+  #venus-without-clouds {
+    width: 80%;
+    height: auto;
+  }
+
+  #img-earth {
+    width: 80%;
+    height: auto;
+  }
+
+  #img-moon {
+    width: 30%;
+    height: auto;
+  }
+
+  #img-mars {
+    width: 80%;
+    height: auto;
+  }
+
   .asteroid-belt {
     width: 100%;
   }
@@ -294,8 +347,28 @@ footer {
     margin-bottom: 300px;
   }
 
+  #img-jupiter {
+    width: 60%;
+    height: auto;
+  }
+
+  #img-saturn {
+    width: 100%;
+    height: auto;
+  }
+
+  #img-uranus {
+    width: 30%;
+    height: auto;
+  }
+
+  #img-neptune {
+    width: 30%;
+    height: auto;
+  }
+
   #img-pluto {
-    width: 10%;
+    width: 20%;
     height: auto;
   }
 
@@ -310,6 +383,7 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 425px) and (max-width: 600px) {
+
   .h1 {
     font-size: 200vw;
   }
@@ -354,6 +428,7 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+
   .h1 {
     font-size: 400vw;
   }
@@ -379,6 +454,7 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
   .h1 {
     font-size: 500vw;
   }
@@ -399,10 +475,16 @@ footer {
     font-size: 200%;
     font-optical-sizing: auto;
   }
+
+  #img-pluto {
+    width: 10%;
+    height: auto;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
+
   .h1 {
     font-size: 100%;
   }
@@ -416,9 +498,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    gap: 20px;
   }
 
   .section-2-item {
@@ -429,6 +511,7 @@ footer {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    gap: 20px;
   }
 
   .section-2-1-item {
@@ -439,6 +522,7 @@ footer {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    gap: 20px;
   }
 
   #img-pluto {
