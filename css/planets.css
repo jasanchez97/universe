@@ -1,0 +1,137 @@
+body {
+    background-image: url(../img/Background.png);
+    /* Imagen de fondo*/
+    background-position: center;
+    /* Centrar imagen*/
+    background-repeat: no-repeat;
+    /* No repetir imagen*/
+    background-attachment: fixed;
+    /* Fijar imagen*/
+}
+
+.Content-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.svg {
+    width: 2%;
+}
+
+.Content-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.paragraph-main {
+    color: white;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    flex: 90%;
+    text-align: justify;
+    align-items: center;
+    text-indent: 50px;
+}
+
+.link-celestials-body {
+    color: black;
+    font-size: 40px;
+    /* Tamaño de letra */
+    text-decoration: none;
+    /* Quitar subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 10px 20px;
+    /* Espacio alrededor del enlace */
+    background-color: #f1c40f;
+    /* Color de fondo */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    /* Transición al pasar el ratón */
+}
+
+.link-celestials-body:hover {
+    background-color: #e67e22;
+    /* Color de fondo al pasar el ratón */
+}
+
+#img-mercury {
+    width: 20%;
+    height: auto;
+}
+
+#venus-without-clouds {
+    width: 30%;
+    display: none;
+}
+
+#venus-with-clouds {
+    width: 30%;
+    display: block;
+}
+
+#img-earth {
+    width: 35%;
+    height: auto;
+}
+
+#img-mars {
+    width: 25%;
+    height: auto;
+}
+
+#img-saturn {
+    width: 90%;
+    height: auto;
+}
+
+#img-uranus {
+    width: 20%;
+    height: auto;
+}
+
+#img-neptune {
+    width: 20%;
+    height: auto;
+}
+
+#img-pluto {
+    width: 20%;
+    height: auto;
+}
+
+.paragraph-main {
+    padding: 20px;
+}
+
+.styles-p {
+    font-family: Orbitron, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white
+}
+
+.button-start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+}

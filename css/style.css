@@ -1,0 +1,458 @@
+body {
+  background-image: url(../img/Background.png);
+  /* Imagen de fondo*/
+  background-repeat: repeat;
+  /* Repetir imagen*/
+  background-attachment: fixed;
+  /* Fijar imagen*/
+}
+
+.main-header {
+  background-color: silver;
+  position: relative;
+}
+
+.main-title {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  font-family: Orbitron, sans-serif;
+  font-weight: 900;
+  min-height: 50px;
+}
+
+.hamburguer-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.sun-container {
+  display: flex;
+  /* Flex */
+  flex-direction: column;
+  /* Columna */
+  justify-content: center;
+  /* Espacio entre los elementos */
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.header-planets {
+  width: content;
+  display: flex;
+  /* Flex */
+  flex-direction: row;
+  /* Fila */
+  justify-content: center;
+  /* Espacio entre los elementos */
+  margin-bottom: 15px;
+}
+
+.sun-container img {
+  width: 100%;
+  /*Ancho*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-1-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+}
+
+.section-1 img {
+  width: 100%;
+  /*Ancho*/
+  height: auto;
+  /*Alto*/
+}
+
+#img-mercury {
+  width: 12%;
+}
+
+#venus-without-clouds {
+  width: 30%;
+  display: none;
+}
+
+#venus-with-clouds {
+  width: 30%;
+  visibility: visible;
+}
+
+#img-earth {
+  width: 30%;
+}
+
+#img-moon {
+  width: 9%;
+  height: auto;
+}
+
+#img-mars {
+  width: 15%;
+}
+
+.asteroid-belt {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.asteroid-belt img {
+  width: 100%;
+  /*Ancho*/
+  object-fit: contain;
+  /*Ajustar la imagen al tamaño de su contenedor*/
+  border: 3px white solid;
+}
+
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.section-2 img {
+  width: 100%;
+  /*Ancho*/
+  height: 100%;
+  /*Alto*/
+  object-fit: contain;
+  /*Ajustar la imagen al tamaño de su contenedor*/
+}
+
+#img-jupiter {
+  width: 50%;
+  height: auto;
+}
+
+#img-saturn {
+  width: 80%;
+  height: auto;
+}
+
+#img-uranus {
+  width: 20%;
+  height: auto;
+}
+
+#img-neptune {
+  width: 20%;
+  height: auto;
+}
+
+.section-2-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2-1 .header-planets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.section-2-1-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2-1 img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  /*Ancho*/
+  height: auto;
+  /*Alto*/
+}
+
+.link-celestials-body {
+  color: black;
+  /* Tamaño de letra*/
+  font-size: 100%;
+  font-optical-sizing: auto;
+  /* Tamaño de letra*/
+  text-align: center;
+  /* Tamaño de la altura*/
+  text-decoration: none;
+  /* Quitar subrayado*/
+  font-weight: bold;
+  /* Texto en negrita */
+  padding: 10%;
+  /* Espacio alrededor del enlace*/
+  background-color: #f1c40f;
+  /* Color de fondo*/
+  border-radius: 10px;
+  /* Bordes redondeados*/
+  transition: background-color 0.3s ease;
+  /* Transición al pasar el ratón*/
+  white-space: nowrap;
+  /* Evitar saltos de línea*/
+}
+
+.link-celestials-body:hover {
+  background-color: #e67e22;
+  /* Color de fondo al pasar el ratón */
+}
+
+footer {
+  background-color: silver;
+  font-family: Orbitron, sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  font-size: 15px;
+}
+
+#svg-footer {
+  width: 30px;
+  height: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 1px) and (max-width: 425px) {
+
+  .h1 {
+    font-size: 300vw;
+  }
+
+  .sun-container {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-1-item {
+    margin-bottom: 100px;
+  }
+
+  .asteroid-belt {
+    width: 100%;
+  }
+
+  .section-2-item {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+
+  #img-pluto {
+    width: 10%;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    width: fit-content;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 425px) and (max-width: 600px) {
+  .h1 {
+    font-size: 200vw;
+  }
+
+  .sun-container {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-1-item {
+    margin-bottom: 100px;
+  }
+
+  .asteroid-belt {
+    width: 100%;
+  }
+
+  .section-2-item {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+
+  #img-pluto {
+    width: 10%;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    font-size: 90%;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .h1 {
+    font-size: 400vw;
+  }
+
+  .sun-container {
+    width: 100%;
+  }
+
+
+  .section-1 {
+    width: 100%;
+  }
+
+  .section-2 {
+    width: 100%;
+  }
+
+  .link-celestials-body {
+    font-size: 130%;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 500vw;
+  }
+
+  .sun-container {
+    width: 100%;
+  }
+
+  .section-1 {
+    width: 100%;
+  }
+
+  .section-2 {
+    width: 100%;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+  .h1 {
+    font-size: 100%;
+  }
+
+  .sun-container {
+    width: 100%;
+  }
+
+  .section-1-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .section-2-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .section-2-1-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #img-pluto {
+    width: 5%;
+    height: auto;
+  }
+
+  .link-celestials-body {
+    font-size: 200%;
+    font-optical-sizing: auto;
+  }
+
+  footer {
+    font-size: 150%;
+    font-optical-sizing: auto;
+  }
+}
