@@ -116,7 +116,7 @@ h1 {
 }
 
 .styles-p {
-  font-family: Orbitron, sans-serif;
+  font-family: Tahoma, sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
@@ -132,10 +132,27 @@ h1 {
 
 footer {
   background-color: silver;
+  font-family: Orbitron, sans-serif;
+  font-weight: 400;
   display: flex;
-  padding: 4px;
-  gap: 10px;
-  font-size: small;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  font-size: 15px;
+}
+
+.svg-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+}
+
+.img-footer {
+  width: 69%;
+  height: auto;
 }
 
 body {
@@ -320,7 +337,7 @@ body {
   }
 
   #img-pluto {
-    width: 5%;
+    width: 20%;
     padding: 15px;
     height: auto;
   }

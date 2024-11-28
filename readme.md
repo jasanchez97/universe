@@ -36,7 +36,7 @@ available, see (https://github.com/jasanchez97/universe/activity).
 
 ## Authors
 
-  - **Tiburcio Cruz** - *Provided the README of PurpleBooth* -
+  - **jasanchez97**
     [TiburcioCruz](repositorio)
     [PurpleBooth](https://github.com/PurpleBooth)
     [JuanAntonioSánchezMartel](https://github.com/jasanchez97)

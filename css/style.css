@@ -3,37 +3,37 @@
   background-color: silver;
   position: sticky;
   top: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header>* {
+  width: 30%;
+  background-color: tomato;
 }
 
 h1.main-title {
-  margin: 0;
-}
-
-.main-header {
-  background-color: silver;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   align-items: center;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-#empty-space {
-  width: 50px;
 }
 
 .main-title {
   color: black;
-  text-align: center;
-  display: flex;
   font-family: Orbitron, sans-serif;
   font-weight: bold;
   min-height: 50px;
-  font-size: 36px;
-  font-weight: bold;
-  justify-content: center;
+  font-optical-sizing: auto;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #crud-form {
@@ -44,14 +44,15 @@ h1.main-title {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   margin: 40px auto;
-  padding: 20px;
 }
 
 .form-group {
   margin-bottom: 20px;
 }
 
-label, input, button {
+label,
+input,
+button {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -61,11 +62,12 @@ h2 {
   font-family: Orbitron, sans-serif;
   font-weight: bold;
   font-size: 36px;
-}
-
-h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.for-phone-and-tablet-screen {
+  display: none;
 }
 
 #hamburguer-icon {
@@ -79,19 +81,16 @@ h2 {
   margin-left: 50px;
 }
 
-#svgrepo-abbreviated style {
-  fill: none;
-}
-
 /* Estilos para el menú lateral */
 .side-menu {
   position: fixed;
   top: 0;
   right: -200px;
   width: 200px;
-  height: 50vh;
+  height: fit-content;
   background-color: #333;
   transition: transform 0.5s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .side-menu ul {
@@ -310,6 +309,23 @@ body {
   /*Alto*/
 }
 
+.link-header {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-optical-sizing: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1c40f;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.link-header:hover {
+  background-color: #e67e22;
+}
+
 .link-celestials-body {
   color: black;
   /* Tamaño de letra*/
@@ -339,6 +355,40 @@ body {
   /* Color de fondo al pasar el ratón */
 }
 
+.go-top-page {
+  color: black;
+  /* Tamaño de letra*/
+  font-size: 100%;
+  font-optical-sizing: auto;
+  /* Tamaño de letra*/
+  text-align: center;
+  /* Tamaño de la altura*/
+  text-decoration: none;
+  /* Quitar subrayado*/
+  font-weight: bold;
+  /* Texto en negrita */
+  padding: 5%;
+  /* Espacio alrededor del enlace*/
+  background-color: #f1c40f;
+  /* Color de fondo*/
+  border-radius: 10px;
+  /* Bordes redondeados*/
+  transition: background-color 0.3s ease;
+  /* Transición al pasar el ratón*/
+  white-space: nowrap;
+  /* Evitar saltos de línea*/
+}
+
+.go-top-page.button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.go-top-page:hover {
+  background-color: #e67e22;
+  /* Color de fondo al pasar el ratón */
+}
+
 footer {
   background-color: silver;
   font-family: Orbitron, sans-serif;
@@ -352,13 +402,44 @@ footer {
   font-size: 15px;
 }
 
-#svg-footer {
-  width: 30px;
-  height: 30px;
+.svg-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+}
+
+.img-footer {
+  width: 69%;
+  height: auto;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 1px) and (max-width: 425px) {
+
+  h1.main-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-section {
+    display: none;
+  }
+
+  .for-phone-and-tablet-screen {
+    display: block;
+  }
+
+  .side-menu.opened {
+    top: 97px;
+    right: 0;
+    /* Muestra el menú lateral */
+  }
+
+  .main-title {
+    font-size: 100%;
+  }
 
   .sun-container {
     width: 100%;
@@ -454,6 +535,14 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 425px) and (max-width: 600px) {
 
+  .header-section {
+    display: none;
+  }
+
+  .for-phone-and-tablet-screen {
+    display: block;
+  }
+
   .sun-container {
     width: 100%;
     margin-bottom: 100px;
@@ -494,6 +583,14 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .header-section {
+    display: none;
+  }
+
+  .for-phone-and-tablet-screen {
+    display: block;
+  }
 
   .sun-container {
     width: 100%;
