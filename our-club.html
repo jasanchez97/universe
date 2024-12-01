@@ -1,63 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestro club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/planets.css">
 </head>
 
 <body>
-  <header>
-
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <div class="header">
-        <div class="main-header">
-          <div id="empty-space"></div>
-          <h1 class="main-title">Universo</h1>
-        </div>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
-          rel="sheet">
-        <link rel="stylesheet" href="css/style.css">
-      </div>
-    </head>
-  </header>
+  <div class="header">
+    <div class="main-header">
+      <div id="empty-space"></div>
+      <h1 class="main-title">Universo</h1>
+    </div>
+  </div>
   <main>
     <h1>Nuestro club</h1>
     <form id="crud-form">
       <div class="form-group">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required autocomplete="on">
+        <div>
+          <span id="form-name-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
       <div class="form-group">
         <label for="surname">Apellidos:</label>
-        <input type="text" id="surname" name="surname" required autocomplete="on">
+        <input type="text" id="surname" name="surname" autocomplete="on">
+        <div>
+          <span id="form-surname-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
       <div class="form-group">
         <label for="adress">Domicilio:</label>
-        <input type="text" id="adress" name="adress" required autocomplete="on">
+        <input type="text" id="adress" name="adress" autocomplete="on">
+        <div>
+          <span id="form-address-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
       <div class="form-group">
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required autocomplete="on">
+        <div>
+          <span id="form-email-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
       <div class="form-group">
         <label for="contact">Contacto:</label>
         <input type="text" id="contact" name="contact" required autocomplete="on">
+        <div>
+          <span id="form-contact-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
       <div class="form-group">
         <label for="social-network">Redes sociales:</label>
         <input type="text" id="social-network" name="social-network" autocomplete="on">
+        <div>
+          <span id="form-social-error" class="error-message" style="display: none; color: red;"></span>
+        </div>
       </div>
-      <button type="submit">Guardar</button>
+      <button type="submit">Enviar</button>
     </form>
+    <h1>¡Nuestros miembros!</h1>
+    <table class="members-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Domicilio</th>
+          <th>Correo electrónico</th>
+          <th>Contacto</th>
+          <th>Redes sociales</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="members-tbody">
+        <!-- Las filas serán generadas dinámicamente por JavaScript -->
+        <!-- Ejemplo de una fila que podría ser generada -->
+        <tr>
+          <td>Juan</td>
+          <td>Pérez</td>
+          <td>Calle Ficticia 123</td>
+          <td>juan@example.com</td>
+          <td>+123456789</td>
+          <td>@juan_perez</td>
+          <td><button class="btn-delete" onclick="deleteMember(0)">Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+
   </main>
-  <h1>¡Nuestros miembros!</h1>
-  <a href="../Universe/index.html" class="link-celestials-body">Inicio</a>
+  <a href="index.html" class="link-celestials-body">Inicio</a>
   <footer>
     <h3>Derechos reservados</h3>
     <h3>Desarrollado por: <a href="https://github.com/jasanchez97" target="_blank">jasanchez97</a></h3>
@@ -73,11 +113,6 @@
     <div class="svg-footer">
       <img src="img/svg-youtube.png" alt="logo" class="img-footer">
     </div>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet">
   </footer>
   <script src="js/crud.js"></script>
 </body>

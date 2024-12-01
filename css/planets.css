@@ -120,7 +120,8 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  color: white
+  color: white;
+  text-indent: 50px;
 }
 
 .button-start-container {

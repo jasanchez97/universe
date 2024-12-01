@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="header">
     <div class="empty-space"></div>
     <h1 class="main-title">Universo</h1>
@@ -40,41 +41,96 @@
 
   <div class="sun-container">
     <div class="header-planets">
-      <a href="celestials-body/sun.html" class="link-celestials-body">El Sol</a>
+      <a href="celestials-body/sun.html" class="link-celestials-body" id="link-sun">El Sol</a>
     </div>
-    <img class="img" src="img/Sun.png" alt="sun">
+    <img class="img-sun" src="img/Sun.png" alt="sun" id="img-sun">
+    <div>
+      <button class="curiosity-button" id="button-sun">
+        ¿Sabías que...?
+      </button>
+    </div>
+    <div>
+      <p class="text" id="text-sun">
+        Un dato curioso sobre el Sol, es que cada segundo fusiona aproximadamente 600
+        millones de toneladas de hidrógeno en helio en su núcleo.<br><br>
+
+        Como resultado, libera una cantidad inmensa de energía en
+        forma de luz y calor.<br><br>
+
+        Sin embargo, solo una pequeña fracción de esa energía llega a la Tierra, ¡pero es
+        suficiente para sostener toda la vida en el planeta!<br><br>
+      </p>
+    </div>
   </div>
+
   <div class="section-1">
     <div class="section-1-item">
-      <div class="header-planets">
-        <a href="celestials-body/mercury.html" class="link-celestials-body">Mercurio</a>
+      <div class="header-planets-mercury">
+        <a href="celestials-body/mercury.html" class="link-celestials-body" id="link-mercury">Mercurio</a>
       </div>
       <img class="img" src="img/Mercury.png" alt="mercury" id="img-mercury">
     </div>
-    <div class="section-1-item">
+    <div class="section-1-item-venus">
       <div class="header-planets">
-        <a href="celestials-body/venus.html" class="link-celestials-body">Venus</a>
+        <a href="celestials-body/venus.html" class="link-celestials-body" id="link-venus">Venus</a>
       </div>
-      <img class="img" src="img/Venus-with-clouds.png" alt="venus-with-clouds" id="venus-with-clouds">
-      <img class="img" src="img/Venus.png" alt="venus" id="venus-without-clouds">
+      <div class="img-venus">
+        <img src="img/Venus-with-clouds.png" alt="venus-with-clouds" id="venus-with-clouds">
+        <img src="img/Venus.png" alt="venus" id="venus-without-clouds">
+      </div>
+      <div>
+        <button class="curiosity-button" id="button-venus">
+          ¿Sabías que...?
+        </button>
+      </div>
+      <div>
+        <p class="text" id="text-venus">
+          Sobre la rotación de Venus es que gira en dirección opuesta<br>a la mayoría de los planetas del sistema solar
+          (rotación retrógrada) y lo hace extremadamente lento.<br><br>¡Un día en Venus (243 días terrestres) es más
+          largo
+          que
+          un
+          año en Venus (225 días terrestres)!<br><br>Esto significa que si estuvieras en Venus, podrías experimentar un
+          día
+          que
+          dura casi dos tercios de su año.
+        </p>
+      </div>
     </div>
     <div class="section-1-item">
       <div class="header-planets">
-        <a href="celestials-body/earth.html" class="link-celestials-body">La Tierra</a>
+        <a href="celestials-body/earth.html" class="link-celestials-body" id="link-earth">La Tierra</a>
       </div>
       <img class="img" src="img/Earth.png" alt="earth" id="img-earth">
     </div>
     <div class="section-1-item">
-      <div class="header-planets">
-        <a href="celestials-body/moon.html" class="link-celestials-body">La Luna</a>
+      <div class="header-planets-moon">
+        <a href="celestials-body/moon.html" class="link-celestials-body" id="link-moon">La Luna</a>
       </div>
       <img class="img" src="img/Moon.png" alt="moon" id="img-moon">
     </div>
-    <div class="section-1-item">
+    <div class="section-1-item-mars">
       <div class="header-planets">
-        <a href="celestials-body/mars.html" class="link-celestials-body">Marte</a>
+        <a href="celestials-body/mars.html" class="link-celestials-body" id="link-mars">Marte</a>
       </div>
       <img class="img" src="img/Mars.png" alt="mars" id="img-mars">
+      <div>
+        <button class="curiosity-button" id="button-mars">
+          ¿Sabías que...?
+        </button>
+      </div>
+      <div>
+        <p class="text" id="text-mars">El Monte Olimpo (Olympus Mons) es el volcán más grande del sistema solar.<br><br>Tiene
+          una altura de aproximadamente 21,9 kilómetros, lo que es casi tres veces más alto que el Monte Everest, el
+          pico más alto de la Tierra.<br><br>Además, su base tiene un diámetro de alrededor de 600 kilómetros, lo que equivale
+          al tamaño de un país como Francia.
+
+          Otra curiosidad es que su pendiente es tan suave (de solo unos pocos grados) que, si estuvieras parado cerca
+          de su base, ¡te costaría darte cuenta de que estás mirando una montaña!.<br><br>Su tamaño descomunal es posible
+          gracias a la baja gravedad de Marte y la falta de placas tectónicas, lo que permitió que el volcán creciera
+          sin interrupciones durante millones de años.
+        </p>
+      </div>
     </div>
   </div>
   <div class="asteroid-belt">
@@ -83,40 +139,39 @@
   <div class="section-2">
     <div class="section-2-item">
       <div class="header-planets">
-        <a href="celestials-body/jupiter.html" class="link-celestials-body">Júpiter</a>
+        <a href="celestials-body/jupiter.html" class="link-celestials-body" id="link-jupiter">Júpiter</a>
       </div>
       <img class="img" src="img/Jupiter.png" alt="jupiter" id="img-jupiter">
     </div>
     <div class="section-2-item">
       <div class="header-planets">
-        <a href="celestials-body/saturn.html" class="link-celestials-body">Saturno</a>
+        <a href="celestials-body/saturn.html" class="link-celestials-body" id="link-saturn">Saturno</a>
       </div>
       <img class="img" src="img/Saturn.png" alt="saturn" id="img-saturn">
     </div>
     <div class="section-2-item">
       <div class="header-planets">
-        <a href="celestials-body/uranus.html" class="link-celestials-body">Urano</a>
+        <a href="celestials-body/uranus.html" class="link-celestials-body" id="link-uranus">Urano</a>
       </div>
       <img class="img" src="img/Uranus.png" alt="uranus" id="img-uranus">
     </div>
     <div class="section-2-item">
       <div class="header-planets">
-        <a href="celestials-body/neptune.html" class="link-celestials-body">Neptuno</a>
+        <a href="celestials-body/neptune.html" class="link-celestials-body" id="link-neptune">Neptuno</a>
       </div>
       <img class="img" src="img/Neptune.png" alt="neptune" id="img-neptune">
     </div>
   </div>
   <div class="section-2-1">
     <div class="section-2-1-item">
-      <div class="header-planets">
-        <a href="celestials-body/pluto.html" class="link-celestials-body">Pluton</a>
+      <div class="header-planets-pluto">
+        <a href="celestials-body/pluto.html" class="link-celestials-body" id="link-pluto">Pluton</a>
       </div>
       <img class="img" src="img/Pluto.png" alt="pluto" id="img-pluto">
     </div>
   </div>
 
   <div class="kuiper-belt">
-
   </div>
 
   <footer>
@@ -135,8 +190,8 @@
       <img src="img/svg-youtube.png" alt="logo" class="img-footer">
     </div>
   </footer>
-
-  <script src="js/hidden-link.js"></script>
+  <script src="js/curiosity-button-transitions.js"></script>
+  <script src="js/hidden-links.js"></script>
   <script src="js/hide-venus.js"></script>
   <script src="js/side-menu.js"></script>
 </body>
