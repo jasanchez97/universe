@@ -18,11 +18,17 @@
 
   <div class="header">
     <div class="empty-space"></div>
-    <h1 class="main-title">Universo</h1>
+    <p class="main-title">Universo</p>
     <div class="header-section">
-      <a href="our-club.html" target="_blank" class="link-header">Nuestro Club</a>
-      <a class="link-header">Información</a>
-      <a class="link-header">Contacto</a>
+      <div>
+        <a href="our-club.html" target="_blank" class="link-header">Nuestro Club</a>
+      </div>
+      <div>
+        <a href="registered.html" class="link-header">Registros</a>
+      </div>
+      <div>
+        <a class="link-header go-bottom-page">Contacto</a>
+      </div>
     </div>
     <div class="for-phone-and-tablet-screen">
       <div id="hamburguer-icon">
@@ -31,19 +37,22 @@
       <div class="side-menu">
         <ul>
           <li><a href="our-club.html" target="_blank">Nuestro club</a></li>
-          <li><a href="#">Información</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><button class="go-top-page" id="go-top-page">Inicio</button></li>
+          <li><a href="registered.html" target="_blank">Registros</a></li>
+          <li><a href="edit-member.html" target="_blank">Editar</a></li>
+          <li><a class="go-bottom-page">Contacto</a></li>
+          <li><button class="go-page" id="go-top-page">Inicio</button></li>
         </ul>
       </div>
     </div>
   </div>
 
   <div class="sun-container">
-    <div class="header-planets">
+    <div class="header-planets-sun" id="header-planets-sun">
       <a href="celestials-body/sun.html" class="link-celestials-body" id="link-sun">El Sol</a>
     </div>
-    <img class="img-sun" src="img/Sun.png" alt="sun" id="img-sun">
+    <div>
+      <img class="img-sun" src="img/Sun.png" alt="sun" id="img-sun">
+    </div>
     <div>
       <button class="curiosity-button" id="button-sun">
         ¿Sabías que...?
@@ -71,12 +80,12 @@
       <img class="img" src="img/Mercury.png" alt="mercury" id="img-mercury">
     </div>
     <div class="section-1-item-venus">
-      <div class="header-planets">
+      <div class="header-planets-venus">
         <a href="celestials-body/venus.html" class="link-celestials-body" id="link-venus">Venus</a>
       </div>
       <div class="img-venus">
-        <img src="img/Venus-with-clouds.png" alt="venus-with-clouds" id="venus-with-clouds">
-        <img src="img/Venus.png" alt="venus" id="venus-without-clouds">
+        <img src="img/venus-with-clouds.png" alt="venus-with-clouds" id="venus-with-clouds">
+        <img src="img/venus-without-clouds.png" alt="venus" id="venus-without-clouds">
       </div>
       <div>
         <button class="curiosity-button" id="button-venus">
@@ -85,8 +94,9 @@
       </div>
       <div>
         <p class="text" id="text-venus">
-          Sobre la rotación de Venus es que gira en dirección opuesta<br>a la mayoría de los planetas del sistema solar
-          (rotación retrógrada) y lo hace extremadamente lento.<br><br>¡Un día en Venus (243 días terrestres) es más
+          Venus gira en dirección opuesta a la mayoría de los planetas del sistema solar
+          (rotación retrógrada)<br><br> y lo hace extremadamente lento.<br><br>¡Un día en Venus (243 días terrestres) es
+          más
           largo
           que
           un
@@ -110,23 +120,28 @@
       <img class="img" src="img/Moon.png" alt="moon" id="img-moon">
     </div>
     <div class="section-1-item-mars">
-      <div class="header-planets">
+      <div class="header-planets-mars">
         <a href="celestials-body/mars.html" class="link-celestials-body" id="link-mars">Marte</a>
       </div>
-      <img class="img" src="img/Mars.png" alt="mars" id="img-mars">
+      <div>
+        <img class="img" src="img/Mars.png" alt="mars" id="img-mars">
+      </div>
       <div>
         <button class="curiosity-button" id="button-mars">
           ¿Sabías que...?
         </button>
       </div>
       <div>
-        <p class="text" id="text-mars">El Monte Olimpo (Olympus Mons) es el volcán más grande del sistema solar.<br><br>Tiene
+        <p class="text" id="text-mars">El Monte Olimpo (Olympus Mons) es el volcán más grande del sistema
+          solar.<br><br>Tiene
           una altura de aproximadamente 21,9 kilómetros, lo que es casi tres veces más alto que el Monte Everest, el
-          pico más alto de la Tierra.<br><br>Además, su base tiene un diámetro de alrededor de 600 kilómetros, lo que equivale
+          pico más alto de la Tierra.<br><br>Además, su base tiene un diámetro de alrededor de 600 kilómetros, lo que
+          equivale
           al tamaño de un país como Francia.
 
           Otra curiosidad es que su pendiente es tan suave (de solo unos pocos grados) que, si estuvieras parado cerca
-          de su base, ¡te costaría darte cuenta de que estás mirando una montaña!.<br><br>Su tamaño descomunal es posible
+          de su base, ¡te costaría darte cuenta de que estás mirando una montaña!.<br><br>Su tamaño descomunal es
+          posible
           gracias a la baja gravedad de Marte y la falta de placas tectónicas, lo que permitió que el volcán creciera
           sin interrupciones durante millones de años.
         </p>
@@ -171,29 +186,34 @@
     </div>
   </div>
 
-  <div class="kuiper-belt">
+  <div class="button-start-container">
+    <a href="../index.html" class="link-celestials-body">Inicio</a>
   </div>
 
   <footer>
     <h3>Derechos reservados</h3>
     <h3>Desarrollado por: <a href="https://github.com/jasanchez97" target="_blank">jasanchez97</a></h3>
     <div class="svg-footer">
-      <img src="img/svg-facebook.png" alt="logo" class="img-footer">
-    </div>
-    <div class="svg-footer">
-      <img src="img/svg-instagram.png" alt="logo" class="img-footer">
-    </div>
-    <div class="svg-footer">
-      <img src="img/svg-twitter.png" alt="logo" class="img-footer">
-    </div>
-    <div class="svg-footer">
-      <img src="img/svg-youtube.png" alt="logo" class="img-footer">
+      <div class="svg-footer-1">
+        <img src="img/svg-facebook.png" alt="logo" class="img-footer" id="img-footer-1">
+      </div>
+      <div class="svg-footer-2">
+        <img src="img/svg-instagram.png" alt="logo" class="img-footer" id="img-footer-2">
+      </div>
+      <div class="svg-footer-3">
+        <img src="img/svg-twitter.png" alt="logo" class="img-footer" id="img-footer-3">
+      </div>
+      <div class="svg-footer-4">
+        <img src="img/svg-youtube.png" alt="logo" class="img-footer" id="img-footer-4">
+      </div>
     </div>
   </footer>
+
+  <script src="js/hide-venus.js"></script>
   <script src="js/curiosity-button-transitions.js"></script>
   <script src="js/hidden-links.js"></script>
-  <script src="js/hide-venus.js"></script>
   <script src="js/side-menu.js"></script>
+  <script src="js/change-svg-footer.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universo-Agregar miembro</title>
+  <title>Universo-Editar Miembro</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,41 +17,41 @@
 <body>
 
   <div class="header">
-    <h1>Nuevo registro</h1>
+    <h1>Editar Miembro</h1>
   </div>
 
   <main>
-    <form id="crud-form">
+    <form id="edit-form">
       <div class="form-group">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required autocomplete="on">
+        <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
         <label for="surname">Apellidos:</label>
-        <input type="text" id="surname" name="surname" autocomplete="on">
+        <input type="text" id="surname" name="surname">
       </div>
       <div class="form-group">
         <label for="address">Domicilio:</label>
-        <input type="text" id="address" name="address" autocomplete="on">
+        <input type="text" id="address" name="address">
       </div>
       <div class="form-group">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required autocomplete="on">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group">
         <label for="contact">Contacto:</label>
-        <input type="text" id="contact" name="contact" required autocomplete="on">
+        <input type="text" id="contact" name="contact" required>
       </div>
       <div class="form-group">
-        <label for="social-network">Redes sociales:</label>
-        <input type="text" id="social-network" name="social-network" autocomplete="on">
+        <label for="social-network">Redes Sociales:</label>
+        <input type="text" id="social-network" name="social-network">
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit">Actualizar</button>
     </form>
   </main>
 
   <div class="home-button-container">
-    <a href="registered.html" class="home-link">Ver miembros</a>
+    <a href="registered.html" class="home-link">Regresar</a>
   </div>
 
   <footer>
@@ -59,7 +59,7 @@
     <h3>Desarrollado por: <a href="https://github.com/jasanchez97" target="_blank">jasanchez97</a></h3>
   </footer>
 
-  <script src="js/save-data.js"></script>
+  <script src="js/edit-member.js"></script>
 </body>
 
 </html>

@@ -5,40 +5,40 @@ function clickCuriosityButton() {
 }
 
 function clickCuriosityButtonSun() {
-  // Obtener los elementos
-  const button = document.getElementById('button-sun');
-  const box = document.querySelector('.sun-container');
-  
-  // Añadir el evento de clic solo una vez
-  button.addEventListener('click', () => {
-    // Alternar la clase 'sun-container-expanded' para aplicar la animación
-    box.classList.toggle('sun-container-expanded');
+  // Obtain elements
+  const BUTTON_SUN = document.getElementById('button-sun');
+  const SUN_CONTAINER = document.querySelector('.sun-container');
+
+  // Add event listener only once
+  BUTTON_SUN.addEventListener('click', () => {
+    // Alternate the '.sun-container-expanded' class to apply the animation
+    SUN_CONTAINER.classList.toggle('sun-container-expanded');
   });
 }
 
 function clickCuriosityButtonVenus() {
-  // Obtener los elementos
-  const button = document.getElementById('button-venus');
-  const box = document.querySelector('.section-1-item-venus');
-  
-  // Añadir el evento de clic solo una vez
-  button.addEventListener('click', () => {
-    // Alternar la clase '.section-1-item-venus-expanded' para aplicar la animación
-    box.classList.toggle('section-1-item-venus-expanded');
+  // Obtain elements
+  const BUTTON_SUN = document.getElementById('button-venus');
+  const SUN_CONTAINER = document.querySelector('.section-1-item-venus');
+
+  // Add event listener only once
+  BUTTON_SUN.addEventListener('click', () => {
+    // Alternate the '.section-1-item-venus-expanded' class to apply the animation
+    SUN_CONTAINER.classList.toggle('section-1-item-venus-expanded');
   });
 }
 
 function clickCuriosityButtonMars() {
-  // Obtener los elementos
+  // Obtain elements
   const button = document.getElementById('button-mars');
   const box = document.querySelector('.section-1-item-mars');
-  
-  // Añadir el evento de clic solo una vez
+
+  // Add the click event only once
   button.addEventListener('click', () => {
-    // Alternar la clase '.section-1-item-mars-expanded' para aplicar la animación
+    // Alternate the '.section-1-item-mars-expanded' class to apply the animation
     box.classList.toggle('section-1-item-mars-expanded');
   });
 }
 
-// Ejecutar la función cuando la página esté lista
+// Call the function
 clickCuriosityButton();

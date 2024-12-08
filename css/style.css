@@ -1,142 +1,87 @@
+/* --!--!--!-- HEADER --!--!--!-- SECTION --!--!--!-- */
+
 .header {
   background-color: silver;
   position: sticky;
-  top: 0;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.header>* {
-  width: 30%;
-}
-
-h1.main-title {
-  text-align: center;
-  align-items: center;
+  z-index: 5;
 }
 
 .main-title {
   color: black;
   font-family: Orbitron, sans-serif;
+  text-align: center;
+  font-size: 2vw;
   font-weight: bold;
-  min-height: 50px;
+  width: 30vw;
+  align-self: center;
 }
 
 .header-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
+  gap: 1vw;
+  font-size: 1.5vw;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#crud-form {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  margin: 40px auto;
+.empty-space {
+  width: 30vw;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-label,
-input,
-button {
-  font-family: Montserrat, sans-serif;
+.link-header {
+  color: black;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  padding: 1vw;
+  text-align: center;
+  background-color: #FFD700;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 1.4vw;
+  /* Elegant and clean */
+  font-family: 'Arial', sans-serif;
+  /* Soft shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 8vw;
 }
 
-.error-message {
-  display: block;
-  margin-top: 5px;
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  color: red;
-}
-
-/* Estilos generales para la tabla */
-.members-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+.link-header:hover {
+  /* Elegant contrast on hover */
+  background-color: #800020;
   color: white;
-  font-family: Montserrat, sans-serif;
+  /* Slightly larger on hover */
+  transform: scale(1.05);
+  /* Increased shadow on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.go-page {
+  color: black;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
-  background-color: #2c2f3a;
-  /* Color de fondo oscuro */
+  padding: 5%;
+  background-color: #f1c40f;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
-/* Estilos para las celdas del encabezado */
-.members-table thead {
-  background-color: #333b4b;
-  /* Fondo oscuro para el encabezado */
-  text-align: left;
-  padding: 10px;
-  color: #f0f0f0;
-  /* Color claro para los textos */
-  text-transform: uppercase;
-  /* Transforma el texto a mayúsculas */
-}
-
-.members-table th {
-  padding: 10px 15px;
-  border-bottom: 2px solid #444;
-  /* Separador entre el encabezado y las filas */
-}
-
-/* Estilos para las filas */
-.members-table tbody {
-  background-color: #3a4254;
-  /* Fondo gris oscuro para las filas */
-}
-
-.members-table td {
-  padding: 10px 15px;
-  border-bottom: 1px solid #444;
-  /* Borde sutil entre filas */
-  text-align: left;
-}
-
-.members-table tr:nth-child(even) {
-  background-color: #474f64;
-  /* Fondo alternado para filas pares */
-}
-
-/* Estilo cuando el usuario pasa el mouse por encima de una fila */
-.members-table tr:hover {
-  background-color: #5a6373;
-}
-
-/* Estilos para los botones de acciones */
-.members-table .btn-delete {
-  background-color: #e74c3c;
-  /* Rojo */
-  color: white;
-  border: none;
-  padding: 8px 12px;
+.go-page.button {
+  padding: 5px 10px;
   font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
-.members-table .btn-delete:hover {
-  background-color: #c0392b;
-  /* Rojo más oscuro al pasar el mouse */
+.go-page:hover {
+  background-color: #e67e22;
 }
 
 h2 {
@@ -152,19 +97,14 @@ h2 {
 }
 
 #hamburguer-icon {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
   cursor: pointer;
   z-index: 1;
-  width: 50px;
-  margin-left: 50px;
+  width: 1vw;
 }
 
 .side-menu {
   position: fixed;
-  top: 0;
+  top: 0%;
   right: -200px;
   width: 200px;
   height: fit-content;
@@ -175,8 +115,8 @@ h2 {
 
 .side-menu ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0%;
+  margin: 0%;
   height: 100%;
 }
 
@@ -191,13 +131,16 @@ h2 {
 }
 
 .side-menu.opened {
-  right: 0;
+  right: 0%;
 }
+
+/* --!--!--!-- BODY --!--!--!-- SECTION --!--!--!-- */
 
 body {
   background-image: url(../img/Background.png);
   background-repeat: repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .sun-container {
@@ -207,12 +150,7 @@ body {
   align-items: center;
   margin-top: 18px;
   margin-bottom: 10px;
-  position: relative;
-}
-
-#img-sun {
-  width: 90%;
-  height: auto;
+  width: 100%;
 }
 
 #link-sun {
@@ -225,6 +163,7 @@ body {
 
 #link-venus {
   visibility: hidden;
+  z-index: 1;
 }
 
 #link-earth {
@@ -267,24 +206,30 @@ body {
   border-radius: 0px;
   background-color: transparent;
   position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 #button-sun {
+  font-size: 18px;
   left: 90%;
+  transition-duration: 4s;
 }
 
 #button-venus {
-  top: 46%;
-  left: 72%;
+  font-size: 18px;
+  position: absolute;
+  top: -11.65%;
+  left: 40.99%;
 }
 
 #button-mars {
+  font-size: 18px;
   top: 45%;
-  left: 66%;
+  left: 30%;
 }
 
 .text {
-  display: none;
   color: white;
   font-family: Tahoma, sans-serif;
   font-weight: 900;
@@ -293,30 +238,51 @@ body {
 }
 
 #text-sun {
-  display: none;
-  opacity: 1;
-  width: auto;
+  opacity: 0;
+  position: absolute;
+  left: 0%;
 }
 
 #text-venus {
-  display: none;
-  opacity: 1;
-  width: auto;
+  opacity: 0;
+  transition: opacity 2s ease;
+  position: absolute;
+  width: 130%;
+  left: -6.37%;
+  top: 78.50%;
+  font-size: 20px;
+  z-index: 0;
 }
 
 #text-mars {
-  display: none;
-  opacity: 1;
-  width: auto;
+  opacity: 0;
+  font-size: 1.1vw;
+  position: absolute;
+  width: 70vw;
+  left: 3%;
+  top: 5%;
+  z-index: -1;
+  transition-duration: 2s;
 }
 
 .header-planets {
   position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 5%;
+  font-size: 20px;
+}
+
+#header-planets-sun {
+  position: absolute;
+  justify-content: center;
   width: 10%;
   font-size: 20px;
+  width: fit-content;
+  z-index: 1;
+  transition-duration: 2s;
 }
 
 .header-planets-mercury {
@@ -328,13 +294,33 @@ body {
   font-size: 20px;
 }
 
-.header-planets-moon {
+.header-planets-venus {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 5%;
-  font-size: 10px;
+  font-size: 20px;
+}
+
+.header-planets-moon {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 7%;
+  font-size: 20px;
+}
+
+.header-planets-mars {
+  position: absolute;
+  justify-content: center;
+  width: 10%;
+  font-size: 20px;
+  width: fit-content;
+  z-index: 1;
+  transform: translate(0px, 0px);
+  transition: 2s;
 }
 
 .header-planets-pluto {
@@ -344,6 +330,7 @@ body {
   justify-content: center;
   width: 10%;
   font-size: 20px;
+  width: fit-content;
 }
 
 .section-1 {
@@ -351,7 +338,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   position: relative;
 }
 
@@ -362,6 +348,7 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .section-1-item-venus {
@@ -382,6 +369,13 @@ body {
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100vw;
+}
+
+#img-sun {
+  width: 100vw;
+  text-align: center;
+  transition-duration: 2s;
 }
 
 #img-mercury {
@@ -393,15 +387,16 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 60vw;
 }
 
 #venus-with-clouds {
-  width: 40%;
+  width: 26vw;
   visibility: visible;
 }
 
 #venus-without-clouds {
-  width: 40%;
+  width: 26vw;
   display: none;
 }
 
@@ -410,12 +405,18 @@ body {
 }
 
 #img-moon {
-  width: 10%;
-  height: auto;
+  width: 11%;
 }
 
 #img-mars {
-  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: auto;
+  transition-duration: 2s;
+  position: relative;
 }
 
 .asteroid-belt {
@@ -504,29 +505,8 @@ body {
   align-items: center;
 }
 
-.section-2-1 img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: auto;
-}
-
-.link-header {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  background-color: #f1c40f;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-}
-
-.link-header:hover {
-  background-color: #e67e22;
+#img-pluto {
+  width: 20%;
 }
 
 .link-celestials-body {
@@ -535,7 +515,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  padding: 10%;
+  padding: 1%;
   background-color: #f1c40f;
   border-radius: 10px;
   transition: background-color 0.3s ease;
@@ -546,26 +526,13 @@ body {
   background-color: #e67e22;
 }
 
-.go-top-page {
-  color: black;
-  font-size: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5%;
-  background-color: #f1c40f;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-}
-
-.go-top-page.button {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
-.go-top-page:hover {
-  background-color: #e67e22;
+.button-start-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -589,17 +556,56 @@ footer {
 }
 
 .img-footer {
-  width: 69%;
+  width: 7.5vw;
   height: auto;
 }
 
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (min-width: 1px) and (max-width: 425px) {
+/* Custom Scrollbar for the entire page */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-  h1.main-title {
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2c2f3a;
+  border-radius: 10px;
+}
+
+/* --!--!--!-- MEDIA QUERY --!--!--!-- SECTION --!--!--!-- */
+
+/* Small devices (phones and tablets) */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+
+  .header {
+    background: transparent;
+    position: sticky;
+    top: 0;
+    width: 97vw;
+  }
+
+  .main-title {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: center;
+    color: white;
+    width: 30vw;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 5vw;
+  }
+
+  .empty-space {
+    width: 0vw;
   }
 
   .header-section {
@@ -608,20 +614,65 @@ footer {
 
   .for-phone-and-tablet-screen {
     display: block;
+    position: relative;
+    left: -18%;
+    width: 0vw;
   }
 
   .side-menu.opened {
-    top: 97px;
+    top: 65px;
     right: 0;
   }
 
-  .main-title {
-    font-size: 100%;
+  .header-planets {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10%;
+    font-size: 20px;
+  }
+
+  .header-planets-sun {
+    position: absolute;
+  }
+
+  .header-planets-venus {
+    top: 39%;
   }
 
   .sun-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
     width: 100%;
     margin-bottom: 100px;
+  }
+
+  #button-sun {
+    display: none;
+  }
+
+  #button-venus {
+    display: none;
+  }
+
+  #button-mars {
+    display: none;
+  }
+
+  #text-sun {
+    display: none;
+  }
+
+  #text-venus {
+    display: none;
+  }
+
+  #text-mars {
+    display: none;
   }
 
   .section-1 {
@@ -637,22 +688,24 @@ footer {
   }
 
   #img-mercury {
-    width: 50%;
+    width: 30%;
     height: auto;
   }
 
   #venus-with-clouds {
-    width: 80%;
+    width: 63%;
     height: auto;
+    margin-bottom: 30px;
   }
 
   #venus-without-clouds {
-    width: 80%;
+    width: 63%;
     height: auto;
+    margin-bottom: 30px;
   }
 
   #img-earth {
-    width: 80%;
+    width: 50vw;
     height: auto;
   }
 
@@ -662,7 +715,7 @@ footer {
   }
 
   #img-mars {
-    width: 80%;
+    width: 40vw;
     height: auto;
   }
 
@@ -705,19 +758,6 @@ footer {
     width: fit-content;
   }
 
-  footer {
-    font-size: 10px;
-  }
-
-  .members-table th,
-  .members-table td {
-    padding: 8px 10px;
-  }
-
-  .members-table .btn-delete {
-    padding: 6px 10px;
-  }
-
   .curiosity-button {
     display: none;
   }
@@ -733,22 +773,89 @@ footer {
   .section-1-item-mars-expanded {
     display: none;
   }
-} */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 425px) and (max-width: 600px) {
+  footer {
+    color: white;
+    background: transparent;
+    font-size: 10px;
+    gap: 5px;
+    align-self: center;
+  }
+
+  .svg-footer {
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  .img-footer {
+    width: 7.5vw;
+    align-items: center;
+  }
+
+  #svg-footer-4 {
+    align-self: center;
+  }
+
+  footer h3 {
+    font-size: 3.5vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+  .header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .empty-space {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 3.5vw;
+  }
 
   .header-section {
     display: none;
   }
 
   .for-phone-and-tablet-screen {
+    position: relative;
     display: block;
+    left: -6%;
   }
 
   .sun-container {
-    width: 100%;
+    display: block;
+    width: 100vw;
     margin-bottom: 100px;
+  }
+
+  #header-planets-sun {
+    position:absolute;
+    top: 65%;
+    left: 48%;
+  }
+
+  #text-sun {
+    display: none;
+  }
+
+  #text-venus {
+    display: none;
+  }
+
+  #text-mars {
+    display: none;
+  }
+
+  .curiosity-button {
+    display: none;
   }
 
   .section-1 {
@@ -786,140 +893,60 @@ footer {
     display: none;
   }
 
-  .sun-container-expanded {
-    display: none;
+  footer {
+    gap: 5px;
   }
 
-  .section-1-item-venus-expanded {
-    display: none;
-  }
-
-  .section-1-item-mars-expanded {
-    display: none;
-  }
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 600px) and (max-width: 768px) {
-
-  .header-section {
-    display: none;
-  }
-
-  .for-phone-and-tablet-screen {
-    display: block;
-  }
-
-  .sun-container {
-    width: 100%;
-  }
-
-
-  .section-1 {
-    width: 100%;
-  }
-
-  .section-2 {
-    width: 100%;
-  }
-
-  .link-celestials-body {
-    font-size: 130%;
-  }
-
-  .curiosity-button {
-    display: none;
-  }
-
-  .sun-container-expanded {
-    display: none;
-  }
-
-  .section-1-item-venus-expanded {
-    display: none;
-  }
-
-  .section-1-item-mars-expanded {
-    display: none;
-  }
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .h1 {
-    font-size: 1rem;
-  }
-
-  .sun-container {
-    width: 100%;
-  }
-
-  .section-1 {
-    width: 100%;
-  }
-
-  .section-2 {
-    width: 100%;
-  }
-
-  .link-celestials-body {
-    font-size: 200%;
-  }
-
-  #img-pluto {
-    width: 10%;
+  .svg-footer {
     height: auto;
+    align-items: center;
+    gap: 10px;
   }
 
-  .curiosity-button {
-    display: none;
+  .img-footer {
+    width: 4vw;
   }
-
-  .sun-container-expanded {
-    display: none;
-  }
-
-  .section-1-item-venus-expanded {
-    display: none;
-  }
-
-  .section-1-item-mars-expanded {
-    display: none;
-  } */
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1024px) {
 
-  .sun-container-expanded {
-    display: flex;
-    flex-direction: row;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    width: 100%;
+  .main-title {
+    font-size: 2vw;
+    width: 7vw;
+  }
 
-    #img-sun {
-      width: 100%;
-      height: auto;
-    }
+  .sun-container-expanded #img-sun {
+    position: relative;
+    width: 50vw;
+    height: auto;
+    transform: translate(-50%, 0%);
+    transition-duration: 2s;
+  }
 
-    .header-planets {
-      left: 22%;
-    }
+  .sun-container-expanded #header-planets-sun {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-245px, 0px);
+    transition-duration: 2s;
+  }
 
-    #button-sun {
-      top: 27%;
-      left: 70%;
-      font-size: 19px;
-    }
+  .sun-container-expanded #button-sun {
+    left: 63%;
+    top: 36%;
+    font-size: 19px;
+    transform: translate(-50%, -50%);
+    transition-duration: 2s;
+  }
 
-    #text-sun {
-      display: flex;
-      flex-direction: column;
-      font-size: 20px;
-      position: relative;
-      width: 100%;
-    }
+  .sun-container-expanded #text-sun {
+    font-size: 1.1vw;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    opacity: 1;
+    transition: opacity 4s ease-in;
+    width: 55vw;
   }
 
   .section-1 {
@@ -947,70 +974,70 @@ footer {
     margin-bottom: 10px;
     width: 100%;
     position: relative;
+  }
 
-    #venus-with-clouds {
-      width: 65%;
-      height: auto;
-    }
+  .section-1-item-venus-expanded .img-venus {
+    position: relative;
+    left: 0%;
+    width: 60%;
+  }
 
-    #venus-without-clouds {
-      width: 65%;
-      height: auto;
-    }
+  .section-1-item-venus-expanded .header-planets {
+    top: 40%;
+    left: 47%;
+    font-size: 19px;
+    z-index: 1;
+  }
 
-    .header-planets {
-      top: 40%;
-      left: 19%;
-      font-size: 19px;
-    }
+  .section-1-item-venus-expanded #button-venus {
+    top: -11.20%;
+    left: 44.54%;
+  }
 
-    #button-venus {
-      top: 15%;
-      left: 65%;
-      font-size: 19px;
-    }
-
-    #text-venus {
-      display: flex;
-      flex-direction: column;
-      font-size: 20px;
-      position: relative;
-      width: 90%;
-    }
+  .section-1-item-venus-expanded #text-venus {
+    font-size: 20px;
+    position: absolute;
+    width: 75%;
+    left: 86%;
+    bottom: -48%;
+    opacity: 1;
+    transition: opacity 2s ease-in;
+    transform: translate(-1000px, 0px);
   }
 
   .section-1-item-mars-expanded {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
+    width: 100vw;
+  }
 
-    #img-mars {
-      position: relative;
-      left: 10%;
-      width: 17.93%;
-    }
+  .section-1-item-mars-expanded #img-mars {
+    width: 20vw;
+    height: auto;
+    transform: translate(37.5vw, 0px);
+    transition-duration: 2s;
+    left: 0%;
+  }
 
-    .header-planets {
-      left: 14%;
-      font-size: 19px;
-      z-index: 1;
-    }
+  .section-1-item-mars-expanded .header-planets-mars {
+    left: 48%;
+    font-size: 19px;
+    transform: translate(35vw, 0px);
+    transition-duration: 2s;
+    z-index: 1;
+    width: 10%;
+  }
 
-    #button-mars {
-      top: -5%;
-      left: 60%;
-      font-size: 19px;
-    }
+  .section-1-item-mars-expanded #button-mars {
+    top: 0%;
+    left: 26%;
+    font-size: 19px;
+  }
 
-    #text-mars {
-      display: flex;
-      flex-direction: column;
-      font-size: 20px;
-      position: relative;
-      width: 70%;
-      left: 25%;
-    }
+  .section-1-item-mars-expanded #text-mars {
+    opacity: 1;
+    font-size: 1.1vw;
+    position: absolute;
+    width: 70vw;
+    left: 3%;
   }
 
   .section-2-item {
@@ -1037,14 +1064,60 @@ footer {
 
   #img-pluto {
     width: 15%;
-    height: auto;
   }
 
   .link-celestials-body {
     font-size: 200%;
   }
 
+  /* Styles for the footer */
   footer {
-    font-size: 100%;
+    background-color: #1a1a1a;
+    color: #eaeaea;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 90%;
+    border-top: 3px solid #ff9900;
+  }
+
+  footer h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #ff4500;
+  }
+
+  footer .svg-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+
+  footer .svg-footer img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  footer .svg-footer img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
   }
 }

@@ -37,8 +37,6 @@ available, see (https://github.com/jasanchez97/universe/activity).
 ## Authors
 
   - **jasanchez97**
-    [TiburcioCruz](repositorio)
-    [PurpleBooth](https://github.com/PurpleBooth)
     [JuanAntonioSánchezMartel](https://github.com/jasanchez97)
 
 ## License
