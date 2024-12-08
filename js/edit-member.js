@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const members = JSON.parse(localStorage.getItem('members')) || [];
 
   if (index === null || index < 0 || index >= members.length) {
-    alert('Miembro no encontrado.');
+    alert('Member not found.');
     return;
   }
 
   const member = members[index];
 
-  // Llenar el formulario con los datos del miembro
+  // Fill the form with the member's data
   document.getElementById('name').value = member.name;
   document.getElementById('surname').value = member.surname;
   document.getElementById('address').value = member.address;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    // Actualizar los datos del miembro
+    // Update the member's data
     member.name = document.getElementById('name').value;
     member.surname = document.getElementById('surname').value;
     member.address = document.getElementById('address').value;
@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
     member.contact = document.getElementById('contact').value;
     member.socialNetwork = document.getElementById('social-network').value;
 
-    // Guardar los cambios en localStorage
+    // Save the updated data to localStorage
     members[index] = member;
     localStorage.setItem('members', JSON.stringify(members));
 
-    alert('Miembro actualizado correctamente');
-    window.location.href = 'register.html'; // Regresar a la lista de miembros
+    alert('Member updated successfully');
+    window.location.href = 'register.html'; // Redirect to the member list page
   });
 });

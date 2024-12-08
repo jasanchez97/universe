@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Seleccionar todos los elementos de "Contacto"
+  // Get all "Contacto" elements
   const goBottomElements = document.querySelectorAll(".go-bottom-page");
 
-  // Añadir el evento de clic a cada elemento
+  // Add event listener to each "Contacto" element
   goBottomElements.forEach(element => {
     element.addEventListener("click", function () {
-      // Desplazarse al final de la página
+      // Go bottom page
       window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth"
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Botón para ir al inicio de la página
+  // Go top page button
   const goTopPage = document.getElementById("go-top-page");
   if (goTopPage) {
     goTopPage.addEventListener("click", function () {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Menú hamburguesa
+  // Hamburguer icon
   const hamburguerIcon = document.getElementById("hamburguer-icon");
   const sideMenu = document.querySelector(".side-menu");
   if (hamburguerIcon && sideMenu) {

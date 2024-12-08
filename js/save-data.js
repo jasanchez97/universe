@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    // Recoger los datos del formulario
+    // Collect the form data
     const member = {
       name: document.getElementById('name').value,
       surname: document.getElementById('surname').value,
@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
       socialNetwork: document.getElementById('social-network').value,
     };
 
-    // Obtener los miembros del localStorage
+    // Get the members from localStorage
     let members = JSON.parse(localStorage.getItem('members')) || [];
 
-    // Agregar el nuevo miembro
+    // Add the new member
     members.push(member);
 
-    // Guardar los miembros en el localStorage
+    // Save the members in localStorage
     localStorage.setItem('members', JSON.stringify(members));
 
-    // Limpiar el formulario
+    // Reset the form
     form.reset();
   });
 });

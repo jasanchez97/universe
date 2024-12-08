@@ -1,14 +1,14 @@
-// Función para cambiar las imágenes dependiendo de la resolución
-function cambiarImagenesPorResolucion() {
-  // Comprobar el tamaño de la ventana
+// Function to change images based on resolution
+function changeImagesByResolution() {
+  // Check the window size
   if (window.innerWidth < 769) {
-    // Si la resolución es menor que 768px, cambia las imágenes a versiones móviles
+    // If the resolution is less than 768px, change the images to mobile versions
     document.getElementById('img-footer-1').src = '../img/facebook-mobile.png';
     document.getElementById('img-footer-2').src = '../img/instagram-mobile.png';
     document.getElementById('img-footer-3').src = '../img/twitter-mobile.png';
     document.getElementById('img-footer-4').src = '../img/youtube-mobile.png';
   } else {
-    // Si la resolución es mayor o igual a 768px, vuelve a las imágenes por defecto
+    // If the resolution is greater than or equal to 768px, revert to the default images
     document.getElementById('img-footer-1').src = '../img/svg-facebook.png';
     document.getElementById('img-footer-2').src = '../img/svg-instagram.png';
     document.getElementById('img-footer-3').src = '../img/svg-twitter.png';
@@ -16,8 +16,8 @@ function cambiarImagenesPorResolucion() {
   }
 }
 
-// Llamar a la función al cargar la página
-window.onload = cambiarImagenesPorResolucion;
+// Call the function when the page loads
+window.onload = changeImagesByResolution;
 
-// Llamar a la función cada vez que el tamaño de la ventana cambie
-window.onresize = cambiarImagenesPorResolucion;
+// Call the function every time the window size changes
+window.onresize = changeImagesByResolution;

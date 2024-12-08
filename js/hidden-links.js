@@ -27,7 +27,6 @@ function handleMouseOutSun(event) {
   const IMAGE_SUN = document.getElementById("img-sun");
   const LINK_SUN = document.getElementById("link-sun");
 
-  // Verifica si el ratón está realmente fuera de la imagen y del botón
   const relatedTarget = event.relatedTarget;
 
   if (!IMAGE_SUN.contains(relatedTarget) && !LINK_SUN.contains(relatedTarget)) {
@@ -50,7 +49,6 @@ function handleMouseOutMercury(event) {
   const IMAGE_MERCURY = document.getElementById("img-mercury");
   const LINK_MERCURY = document.getElementById("link-mercury");
 
-  // Verifica si el ratón está realmente fuera de la imagen y del botón
   const relatedTarget = event.relatedTarget;
 
   if (!IMAGE_MERCURY.contains(relatedTarget) && !LINK_MERCURY.contains(relatedTarget)) {
@@ -62,7 +60,6 @@ function listenToMouseOverVenus() {
   const IMAGE_VENUS_WITH_CLOUDS = document.getElementById("venus-with-clouds");
   const IMAGE_VENUS_WITHOUT_CLOUDS = document.getElementById("venus-without-clouds");
 
-  // Añadir eventos para ambas imágenes
   IMAGE_VENUS_WITH_CLOUDS.addEventListener("mouseover", showLinkVenus);
   IMAGE_VENUS_WITHOUT_CLOUDS.addEventListener("mouseover", showLinkVenus);
 
@@ -82,7 +79,6 @@ function handleMouseOutVenus(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está fuera de ambas imágenes y del enlace
   if (
     !IMAGE_VENUS_WITH_CLOUDS.contains(relatedTarget) &&
     !IMAGE_VENUS_WITHOUT_CLOUDS.contains(relatedTarget) &&
@@ -95,7 +91,6 @@ function handleMouseOutVenus(event) {
 function listenToMouseOverEarth() {
   const IMAGE_EARTH = document.getElementById("img-earth");
   
-  // Añadir eventos para la imagen de la Tierra
   IMAGE_EARTH.addEventListener("mouseover", showLinkEarth);
   IMAGE_EARTH.addEventListener("mouseout", handleMouseOutEarth);
 }
@@ -111,7 +106,6 @@ function handleMouseOutEarth(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_EARTH.contains(relatedTarget) && !LINK_EARTH.contains(relatedTarget)) {
     LINK_EARTH.style.visibility = "hidden";
   }
@@ -120,7 +114,6 @@ function handleMouseOutEarth(event) {
 function listenToMouseOverMoon() {
   const IMAGE_MOON = document.getElementById("img-moon");
   
-  // Añadir eventos para la imagen de la Luna
   IMAGE_MOON.addEventListener("mouseover", showLinkMoon);
   IMAGE_MOON.addEventListener("mouseout", handleMouseOutMoon);
 }
@@ -136,7 +129,6 @@ function handleMouseOutMoon(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_MOON.contains(relatedTarget) && !LINK_MOON.contains(relatedTarget)) {
     LINK_MOON.style.visibility = "hidden";
   }
@@ -145,7 +137,6 @@ function handleMouseOutMoon(event) {
 function listenToMouseOverMars() {
   const IMAGE_MARS = document.getElementById("img-mars");
   
-  // Añadir eventos para la imagen de Marte
   IMAGE_MARS.addEventListener("mouseover", showLinkMars);
   IMAGE_MARS.addEventListener("mouseout", handleMouseOutMars);
 }
@@ -161,7 +152,6 @@ function handleMouseOutMars(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_MARS.contains(relatedTarget) && !LINK_MARS.contains(relatedTarget)) {
     LINK_MARS.style.visibility = "hidden";
   }
@@ -170,7 +160,6 @@ function handleMouseOutMars(event) {
 function listenToMouseOverJupiter() {
   const IMAGE_JUPITER = document.getElementById("img-jupiter");
   
-  // Añadir eventos para la imagen de Júpiter
   IMAGE_JUPITER.addEventListener("mouseover", showLinkJupiter);
   IMAGE_JUPITER.addEventListener("mouseout", handleMouseOutJupiter);
 }
@@ -186,7 +175,6 @@ function handleMouseOutJupiter(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_JUPITER.contains(relatedTarget) && !LINK_JUPITER.contains(relatedTarget)) {
     LINK_JUPITER.style.visibility = "hidden";
   }
@@ -195,7 +183,6 @@ function handleMouseOutJupiter(event) {
 function listenToMouseOverSaturn() {
   const IMAGE_SATURN = document.getElementById("img-saturn");
   
-  // Añadir eventos para la imagen de Saturno
   IMAGE_SATURN.addEventListener("mouseover", showLinkSaturn);
   IMAGE_SATURN.addEventListener("mouseout", handleMouseOutSaturn);
 }
@@ -211,7 +198,6 @@ function handleMouseOutSaturn(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_SATURN.contains(relatedTarget) && !LINK_SATURN.contains(relatedTarget)) {
     LINK_SATURN.style.visibility = "hidden";
   }
@@ -220,7 +206,6 @@ function handleMouseOutSaturn(event) {
 function listenToMouseOverUranus() {
   const IMAGE_URANUS = document.getElementById("img-uranus");
   
-  // Añadir eventos para la imagen de Urano
   IMAGE_URANUS.addEventListener("mouseover", showLinkUranus);
   IMAGE_URANUS.addEventListener("mouseout", handleMouseOutUranus);
 }
@@ -236,7 +221,6 @@ function handleMouseOutUranus(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_URANUS.contains(relatedTarget) && !LINK_URANUS.contains(relatedTarget)) {
     LINK_URANUS.style.visibility = "hidden";
   }
@@ -245,7 +229,6 @@ function handleMouseOutUranus(event) {
 function listenToMouseOverNeptune() {
   const IMAGE_NEPTUNE = document.getElementById("img-neptune");
   
-  // Añadir eventos para la imagen de Neptuno
   IMAGE_NEPTUNE.addEventListener("mouseover", showLinkNeptune);
   IMAGE_NEPTUNE.addEventListener("mouseout", handleMouseOutNeptune);
 }
@@ -261,7 +244,6 @@ function handleMouseOutNeptune(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_NEPTUNE.contains(relatedTarget) && !LINK_NEPTUNE.contains(relatedTarget)) {
     LINK_NEPTUNE.style.visibility = "hidden";
   }
@@ -269,8 +251,7 @@ function handleMouseOutNeptune(event) {
 
 function listenToMouseOverPluto() {
   const IMAGE_PLUTO = document.getElementById("img-pluto");
-  
-  // Añadir eventos para la imagen de Plutón
+
   IMAGE_PLUTO.addEventListener("mouseover", showLinkPluto);
   IMAGE_PLUTO.addEventListener("mouseout", handleMouseOutPluto);
 }
@@ -286,11 +267,10 @@ function handleMouseOutPluto(event) {
 
   const relatedTarget = event.relatedTarget;
 
-  // Verificar si el ratón está realmente fuera de la imagen y del botón
   if (!IMAGE_PLUTO.contains(relatedTarget) && !LINK_PLUTO.contains(relatedTarget)) {
     LINK_PLUTO.style.visibility = "hidden";
   }
 }
 
-// Inicializa el evento
+// Call function
 listenToMouseOverCelestialsBodys()

@@ -1,9 +1,9 @@
-// Declarar la fila seleccionada globalmente
+// Declare the selected row globally
 var selectedRow = null;
 
-// Función para manejar el evento submit del formulario
+// Function to handle the form submit event
 document.getElementById("crud-form").addEventListener("submit", function (event) {
-    event.preventDefault();  // Evita que el formulario se envíe de manera predeterminada
+    event.preventDefault();  // Prevent the default form submission
     if (validate()) {
         var formData = readFormData();
         if (selectedRow == null)
@@ -14,7 +14,7 @@ document.getElementById("crud-form").addEventListener("submit", function (event)
     }
 });
 
-// Leer los datos del formulario
+// Read the form data
 function readFormData() {
   var formData = {};
   formData["name"] = document.getElementById("name").value;
@@ -23,11 +23,11 @@ function readFormData() {
   formData["email"] = document.getElementById("email").value;
   formData["contact"] = document.getElementById("contact").value;
   formData["social-network"] = document.getElementById("social-network").value;
-  console.log(formData);  // Verifica si el objeto formData tiene los valores correctos
+  console.log(formData);  // Check if the formData object contains the correct values
   return formData;
 }
 
-// Insertar un nuevo registro en la tabla
+// Insert a new record into the table
 function insertNewRecord(data) {
     var table = document.getElementById("miembros-tbody");
     var newRow = table.insertRow(table.length);
@@ -38,11 +38,11 @@ function insertNewRecord(data) {
     newRow.insertCell(3).innerHTML = data.email;
     newRow.insertCell(4).innerHTML = data.contact;
     newRow.insertCell(5).innerHTML = data["social-network"];
-    newRow.insertCell(6).innerHTML = `<a href="javascript:void(0);" onClick="onEdit(this)">Editar</a> 
-                                       <a href="javascript:void(0);" onClick="onDelete(this)">Eliminar</a>`;
+    newRow.insertCell(6).innerHTML = `<a href="javascript:void(0);" onClick="onEdit(this)">Edit</a> 
+                                       <a href="javascript:void(0);" onClick="onDelete(this)">Delete</a>`;
 }
 
-// Función para editar un registro
+// Function to edit a record
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("name").value = selectedRow.cells[0].innerHTML;
@@ -53,7 +53,7 @@ function onEdit(td) {
     document.getElementById("social-network").value = selectedRow.cells[5].innerHTML;
 }
 
-// Función para actualizar un registro
+// Function to update a record
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.name;
     selectedRow.cells[1].innerHTML = formData.surname;
@@ -63,7 +63,7 @@ function updateRecord(formData) {
     selectedRow.cells[5].innerHTML = formData["social-network"];
 }
 
-// Función para restablecer el formulario
+// Function to reset the form
 function resetForm() {
     document.getElementById("name").value = "";
     document.getElementById("surname").value = "";
@@ -74,53 +74,53 @@ function resetForm() {
     selectedRow = null;
 }
 
-// Función de validación
+// Validation function
 function validate() {
     let isValid = true;
 
-    // Validar el campo "name" (obligatorio)
+    // Validate the "name" field (required)
     const name = document.getElementById("name").value;
     if (name === "") {
         isValid = false;
-        showError("name", "El nombre es obligatorio");
+        showError("name", "Name is required");
     } else {
         hideError("name");
     }
 
-    // Validar el campo "surname" (opcional, pero no vacío)
+    // Validate the "surname" field (optional, but not empty)
     const surname = document.getElementById("surname").value;
     if (surname !== "" && !/^[a-zA-Z]+$/.test(surname)) {
         isValid = false;
-        showError("surname", "Solo se permiten letras en los apellidos");
+        showError("surname", "Only letters are allowed in the surname");
     } else {
         hideError("surname");
     }
 
-    // Validar el campo "adress" (opcional)
+    // Validate the "adress" field (optional)
     const adress = document.getElementById("adress").value;
     if (adress !== "" && adress.length < 5) {
         isValid = false;
-        showError("adress", "La dirección debe tener al menos 5 caracteres");
+        showError("adress", "Address must be at least 5 characters long");
     } else {
         hideError("adress");
     }
 
-    // Validar el campo "email" (requiere formato válido)
+    // Validate the "email" field (requires a valid format)
     const email = document.getElementById("email").value;
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (email === "" || !emailPattern.test(email)) {
         isValid = false;
-        showError("email", "Correo electrónico inválido");
+        showError("email", "Invalid email address");
     } else {
         hideError("email");
     }
 
-    // Validar el campo "contact" (debe ser solo números y entre 9-12 dígitos)
+    // Validate the "contact" field (must be numbers only and between 9-12 digits)
     const contact = document.getElementById("contact").value;
     const contactPattern = /^\d{9,12}$/;
     if (contact === "" || !contactPattern.test(contact)) {
         isValid = false;
-        showError("contact", "El contacto debe ser un número entre 9 y 12 dígitos");
+        showError("contact", "Contact must be a number between 9 and 12 digits");
     } else {
         hideError("contact");
     }
@@ -128,7 +128,7 @@ function validate() {
     return isValid;
 }
 
-// Mostrar el mensaje de error
+// Show the error message
 function showError(field, message) {
     const errorElement = document.getElementById(`form-${field}-error`);
     if (errorElement) {
@@ -137,7 +137,7 @@ function showError(field, message) {
     }
 }
 
-// Ocultar el mensaje de error
+// Hide the error message
 function hideError(field) {
     const errorElement = document.getElementById(`form-${field}-error`);
     if (errorElement) {
@@ -145,9 +145,9 @@ function hideError(field) {
     }
 }
 
-// Función para eliminar un registro
+// Function to delete a record
 function onDelete(td) {
-    if (confirm("¿Seguro que quieres eliminar este registro?")) {
+    if (confirm("Are you sure you want to delete this record?")) {
         row = td.parentElement.parentElement;
         document.getElementById("miembros-tbody").deleteRow(row.rowIndex);
         resetForm();
